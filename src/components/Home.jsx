@@ -1,8 +1,12 @@
-import React, { Component } from "react";
-import "../style/styles.css";
+import React from "react";
+import Navbar from "./Navbar";
 
-export default class Sidebar extends Component {
-  render() {
-    return <h1>Hello React movie</h1>;
-  }
-}
+const Home = () => (
+  <div id="background">
+    <div className="navigation">
+      <Navbar />
+    </div>
+  </div>
+);
+export default Home;
+

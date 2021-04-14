@@ -1,14 +1,17 @@
-import './App.css';
-import Navbar from "./components/Navbar";
+import React, { Component } from "react";
+import Movie from "./components/Movie";
 import Home from "./components/Home";
 
-function App() {
-  return (
+class App extends Component {
+  render() {
+    return (
+
     <div className="App">
     <Home />
-    <Navbar />
+    <Movie />
     </div>
   );
+}
 }
 
 export default App;
