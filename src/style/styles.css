@@ -1,0 +1,10 @@
+#nav {
+	border: none !important;
+	text-align: center;
+  }
+  
+  nav a {
+	color: #ffa444 !important;
+	font-family: fantasy;
+	font-size: 19px !important;
+  }
