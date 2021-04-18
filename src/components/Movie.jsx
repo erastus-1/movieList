@@ -4,7 +4,7 @@ import { Card } from "semantic-ui-react";
 
 function Movie() {
   const [data, setData] = useState([]);
-  const getData = () => {
+  const getData =()=>{
     fetch("data.js", {
       headers: {
         "Content-Type": "application/json",
@@ -20,12 +20,12 @@ function Movie() {
         setData(myJson)
     });
   }
-  useEffect(() => {
+  useEffect(()=>{
     getData()
-  }, [])
+  },[])
   return (
     <div className="Card">{
-      data && data.length > 0 && data.map((item) => (
+      data && data.length >0 && data.map((item) => (
           <Card.Group
             className="container"
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
