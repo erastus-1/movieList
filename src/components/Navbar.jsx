@@ -33,50 +33,6 @@ class Navbar extends React.Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="nav navbar-nav navbar-right">
-              <hr />
-              <li>
-                <a
-                  href="/"
-                  style={{ color: "black", fontSize: "large", fontWeight: 400 }}
-                >
-                  <i
-                    className="fas fa-envelope"
-                    style={{ fontSize: 38, color: "rgb(36, 214, 45)" }}
-                  />{" "}
-                  Contact us
-                </a>
-              </li>
-              <hr />
-              <li>
-                <a
-                  href="/"
-                  style={{ color: "black", fontSize: "large", fontWeight: 400 }}
-                >
-                  <i
-                    className="fas fa-shopping-cart"
-                    style={{ fontSize: 38, color: "rgb(36, 214, 45)" }}
-                  />{" "}
-                  Products
-                </a>
-              </li>
-              <hr />
-              <li>
-                <a
-                  href="/"
-                  style={{ color: "black", fontSize: "large", fontWeight: 400 }}
-                >
-                  <i
-                    className="fas fa-user"
-                    style={{ fontSize: 38, color: "rgb(36, 214, 45)" }}
-                  />{" "}
-                  About Us
-                </a>
-              </li>
-              <hr />
-            </ul>
-          </div>
         </div>
       </nav>
     );
