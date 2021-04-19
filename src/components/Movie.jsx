@@ -26,11 +26,11 @@ function Movie() {
   return (
     <div className="Card">{
       data && data.length >0 && data.map((item) => (
+        <div className="row">
           <Card.Group
             className="container"
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
           >
-             <div className="row">
              <div className="col-3">
             <Card>
               <p style={{textAlign:"center"}}>{item.title}</p>
@@ -50,9 +50,9 @@ function Movie() {
                 <small style={{textAlign:"center"}}>{item.cast}</small>
               </Card.Content>
             </Card>
-            </div>
-            </div>
+            </div>  
           </Card.Group>
+          </div>
         ))}
     </div>
   );
