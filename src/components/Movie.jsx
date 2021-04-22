@@ -1,32 +1,22 @@
 import "../style/styles.css";
 import React, { useState, useEffect } from "react";
 import { Card } from "semantic-ui-react";
+import { data } from '../data'
 
 function Movie() {
-  const [data, setData] = useState([]);
+  const [movieData, setData] = useState([]);
   const getData =()=>{
-    fetch("data.js", {
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      }
-    })
-      .then(function (response) {
-        console.log(response)
-        return response.json();
-    })
-      .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson)
-    });
+    setData(data)
   }
   useEffect(()=>{
     getData()
+    console.log(data)
   },[])
+
   return (
     <div className="Card">{
-      data && data.length >0 && data.map((item) => (
-        <div className="row">
+      movieData && movieData.length >0 && movieData.map((item) => (
+        <div className="row" key={item.id}>
           <Card.Group
             className="container"
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
@@ -34,7 +24,7 @@ function Movie() {
              <div className="col-3">
             <Card>
               <p style={{textAlign:"center"}}>{item.title}</p>
-              <img src="{item.image}" style={{ height: "200px", width: "350px" }} alt="" />
+              <img src={item.image} style={{ height: "200px", width: "350px" }} alt="" />
 
               <Card.Content extra>
                 <p>{item.length} long</p>
