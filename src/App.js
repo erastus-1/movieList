@@ -3,6 +3,7 @@ import Movie from "./components/Movie";
 import Details from "./components/Details";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import "./style/scripts";
 
 class App extends Component {
   render() {
