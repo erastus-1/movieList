@@ -16,17 +16,17 @@ function Movie() {
   return (
     <div className="Card">{
       movieData && movieData.length >0 && movieData.map((item) => (
-        <div key={item.id}>
-          <Card.Group
-            itemsPerRow={3}
-            className="container"
+          <div className="container"
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
           >
+            <div className="row">
+              <div className="col-lg-4">
+              <div key={item.id}>
             <Card>
               <Card.Header>
               <p style={{textAlign:"center"}}>{item.title}</p>
               </Card.Header>
-              <img src={item.image} style={{ height: "200px", width: "340px" }} alt="" />
+              <img src={item.image} style={{ height: "200px", width: "290px" }} alt="" />
               <Card.Content extra>
                 <p>{item.length} long</p>
                 <p
@@ -41,7 +41,9 @@ function Movie() {
                 <small style={{textAlign:"center"}}><strong>Cast by: </strong>{item.cast}</small>
               </Card.Content>
             </Card>
-          </Card.Group>
+          </div>
+          </div>
+          </div>
           </div>
         ))}
     </div>
