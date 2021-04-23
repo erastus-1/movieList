@@ -22,13 +22,11 @@ function Movie() {
             className="container"
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
           >
-            {/* <div className="row">
-             <div className="col-3"> */}
+            <div className="row">
+             <div className="col-3">
             <Card>
               <p style={{textAlign:"center"}}>{item.title}</p>
-              <p>
-              <img src={item.image} style={{ height: "200px", width: "100px" }} alt="" />
-              </p>
+              <img src={item.image} style={{ height: "200px", width: "300px" }} alt="" />
               <Card.Content extra>
                 <p>{item.length} long</p>
                 <p
@@ -40,11 +38,11 @@ function Movie() {
                 >
                   <strong>{item.genre}</strong>
                 </p>
-                <small style={{textAlign:"center"}}>{item.cast}</small>
+                <small style={{textAlign:"center"}}>Cast by: {item.cast}</small>
               </Card.Content>
             </Card>
-            {/* </div> 
-            </div>  */}
+            </div> 
+            </div> 
           </Card.Group>
           </div>
         ))}
