@@ -5,7 +5,7 @@ export const data = [
         "cast": ["Andrew Garfield", "Emma Stone", "Tobey Maguire"],
         "genre": ["Action", "Adventure"],
         "length": "2 hours",
-        "image" : "../public/img/spider.jpg"
+        "image" : "../img/spider.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@ export const data = [
         "cast": ["Ben Affleck", "Henry Cavill", "Gal Gadot"],
         "genre": ["Action", "Adventure"],
         "length": "4 hours",
-        "image" : "../public/img/justice.jpg"
+        "image" : "../img/justice.jpg"
     },
     {
         "id": 3,
@@ -29,7 +29,7 @@ export const data = [
         "cast": ["Deenzel Washington", "Anthony Anderson", "Tobey Maguire"],
         "genre": ["Action"],
         "length": "2 hours",
-        "image" : "../public/img/training.jpg"
+        "image" : "../img/training.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@ export const data = [
         "cast": ["Samuel L Jackson", "Tom Hiddleston"],
         "genre": ["Adventure"],
         "length": "2 hours",
-        "image" : "../public/img/godzila.jpg"
+        "image" : "../img/godzila.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@ export const data = [
         "cast": ["Robert Downey", "Chris Evans", "Scarlett Johanson"],
         "genre": ["Action", "Adventure"],
         "length": "3 hours",
-        "image" : "../public/img/avengers.jpg"
+        "image" : "../img/avengers.jpg"
     },
     {
         "id": 7,
@@ -53,6 +53,6 @@ export const data = [
         "cast": ["Pierce Brosnan", "Halle Berry"],
         "genre": ["Espionage"],
         "length": "2 hours",
-        "image" : "../public/img/die.jpg"
+        "image" : "../img/die.jpg"
     }
 ]
