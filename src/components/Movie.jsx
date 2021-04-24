@@ -16,47 +16,41 @@ function Movie() {
   return (
     <div
       className="container"
-      style={{ paddingTop: "20px", paddingBottom: "20px" }}
+      style={{ paddingTop: "100px", paddingBottom: "20px" }}
     >
-      <div className="Card">
-        {movieData &&
-          movieData.length > 0 &&
-          movieData.map((item) => (
-              <div className="row">
-                <div className="col-md-4">
-                  <Card id="card" style={{ paddingTop: "20px", paddingBottom: "20px" }}>
-                  <div key={item.id}>
-                    <Card.Header>
-                      <p style={{ textAlign: "center", color: "blue" }}>
-                        {item.title}
-                      </p>
-                    </Card.Header>
-                    <img
-                      src={item.image}
-                      style={{ height: "200px", width: "290px" }}
-                      alt=""
-                    />
-                    <Card.Content extra style={{ width: "290px", padding:"10px", height:"70px" }}>
-                      <p>{item.length} long</p>
-                      <p
-                        style={{
-                          display: "inline-block",
-                          float: "right",
-                          color: "blue",
-                        }}
-                      >
-                        <strong>{item.genre}</strong>
-                      </p>
-                      <small style={{ textAlign: "center" }}>
-                        <strong>Cast by: </strong>
-                        {item.cast}
-                      </small>
-                    </Card.Content>
-                    </div>
-                  </Card>
+      <div className="row">
+        <div className="Movie">
+          {movieData &&
+            movieData.length > 0 &&
+            movieData.map((item) => (
+              <div className="col-md-3" style={{paddingTop:"20px"}}>
+                <Card id="Card" style={{hieght:"400px"}} >
+                  <p style={{ textAlign: "center", color:"blue" }}>{item.title}</p>
+                  <img
+                    src={item.image}
+                    style={{ height: "250px", width: "300px" }}
+                    alt="props"
+                  />
+                  <Card.Content extra style={{height:"100px"}}>
+                    <p>
+                      <strong>Cast by: </strong>
+                      {item.cast}
+                    </p>
+                    <p
+                      style={{
+                        display: "inline-block",
+                        float: "right",
+                        color: "blue",
+                      }}
+                    >
+                      {item.genre}
+                    </p>
+                    <p>{item.length} long</p>
+                  </Card.Content>
+                </Card>
               </div>
-            </div>
-          ))}
+            ))}
+        </div>
       </div>
     </div>
   );
