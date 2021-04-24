@@ -23,7 +23,7 @@ function Movie() {
           {movieData &&
             movieData.length > 0 &&
             movieData.map((item) => (
-              <div className="col-md-3" style={{paddingTop:"20px"}}>
+              <div className="col-md-3" style={{paddingTop:"5px"}}>
                 <Card id="Card" style={{hieght:"400px"}} >
                   <p style={{ textAlign: "center", color:"blue" }}>{item.title}</p>
                   <img
