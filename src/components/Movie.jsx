@@ -14,27 +14,29 @@ function Movie() {
   }, []);
 
   return (
-    <div className="Card">
-      {movieData &&
-        movieData.length > 0 &&
-        movieData.map((item) => (
-          <div
-            className="container"
-            style={{ paddingTop: "20px", paddingBottom: "20px" }}
-          >
-            <div className="row">
-              <div className="col-lg-4">
-                <div key={item.id}>
-                  <Card>
+    <div
+      className="container"
+      style={{ paddingTop: "20px", paddingBottom: "20px" }}
+    >
+      <div className="Card">
+        {movieData &&
+          movieData.length > 0 &&
+          movieData.map((item) => (
+              <div className="row">
+                <div className="col-md-4">
+                  <Card id="card" style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+                  <div key={item.id}>
                     <Card.Header>
-                      <p style={{ textAlign: "center" }}>{item.title}</p>
+                      <p style={{ textAlign: "center", color: "blue" }}>
+                        {item.title}
+                      </p>
                     </Card.Header>
                     <img
                       src={item.image}
                       style={{ height: "200px", width: "290px" }}
                       alt=""
                     />
-                    <Card.Content extra>
+                    <Card.Content extra style={{ width: "290px", padding:"10px", height:"70px" }}>
                       <p>{item.length} long</p>
                       <p
                         style={{
@@ -50,12 +52,12 @@ function Movie() {
                         {item.cast}
                       </small>
                     </Card.Content>
+                    </div>
                   </Card>
-                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 }

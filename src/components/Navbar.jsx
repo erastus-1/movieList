@@ -22,6 +22,20 @@ class Navbar extends React.Component {
               </a>
             </li>
           </ul>
+          <ul className="nav navbar-nav navbar-right">
+            <li>
+              <a
+                href="/"
+                style={{ color: "black", fontSize: "large", fontWeight: 400 }}
+              >
+                <i
+                  className="fa fa-film"
+                  style={{ fontSize: 38, color: "rgb(36, 214, 45)" }}
+                />{" "}
+                MOVIES
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     );

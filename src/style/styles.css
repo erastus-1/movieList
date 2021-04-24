@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
-	font-family: 'Architects Daughter', cursive;
+	font-family: 'Indie Flower', cursive;
 }
 
 #nav {
@@ -12,6 +14,9 @@ body {
 	font-family: fantasy;
 	font-size: 19px !important;
   }
-  .Card:hover {
+  #Card:hover {
 	  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  }
+  #Card {
+	  margin: 15px;
   }
