@@ -2,6 +2,7 @@ import "../style/styles.css";
 import React, { useState, useEffect } from "react";
 import { Card } from "semantic-ui-react";
 import { data } from "../data";
+import { Link } from "react-router-dom";
 
 function Movie() {
   const [movieData, setData] = useState([]);
@@ -10,7 +11,6 @@ function Movie() {
   };
   useEffect(() => {
     getData();
-    console.log(data);
   }, []);
 
   return (
@@ -23,8 +23,9 @@ function Movie() {
           {movieData &&
             movieData.length > 0 &&
             movieData.map((item) => (
-              <div className="col-md-3" style={{paddingTop:"5px"}}>
-                <Card id="Card" style={{hieght:"400px"}} >
+              <Link to={'/' + item.id} key={item.id}>
+              <div className="col-md-3" style={{paddingTop:"5px"}} >
+                <Card id="Card" style={{height:"400px"}}>
                   <p style={{ textAlign: "center", color:"blue" }}>{item.title}</p>
                   <img
                     src={item.image}
@@ -49,6 +50,7 @@ function Movie() {
                   </Card.Content>
                 </Card>
               </div>
+              </Link>
             ))}
         </div>
       </div>
