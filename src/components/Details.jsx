@@ -29,16 +29,21 @@ const Details = (props) => {
         <div className="row">
           <div className="col-md-6" style={{textAlign:"center"}}>
         <h3><strong>{title}</strong></h3>
-        <small>Cast by</small>
+        <h5>{length} long.</h5>
+        <h5 style={{fontWeight:"bold"}}>Cast by: </h5>
         <div>
-          {cast.forEach(castmember => {
+          {cast.map(castmember => {
             return <p>{castmember}</p>
           })}
         </div>
-        <h5>Length: {length} long.</h5>
         <div>
-          {genre.forEach(genreType => {
-            return <p>{genreType}</p>
+          {genre.map(genreType => {
+            return <p><strong style={{
+              display: "inline-block",
+              float: "right",
+              color: "blue",
+              paddingRight:"5px"
+            }}> {genreType}</strong></p>
           })}
         </div>
         </div>
