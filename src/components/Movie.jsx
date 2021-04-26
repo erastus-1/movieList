@@ -24,12 +24,12 @@ function Movie() {
             movieData.length > 0 &&
             movieData.map((item) => (
               <Link to={'/' + item.id} key={item.id}>
-              <div className="col-md-3" style={{paddingTop:"5px"}} >
-                <Card id="Card" style={{height:"400px"}}>
+              <div className="col-md-4" style={{paddingTop:"5px"}} >
+                <Card id="Card" style={{height:"400px", width:"350px"}}>
                   <p style={{ textAlign: "center", color:"blue" }}>{item.title}</p>
                   <img
                     src={item.image} 
-                    style={{ height: "250px", width: "300px" }}
+                    style={{ height: "250px", width: "350px" }}
                     alt="props"
                   />
                   <Card.Content extra style={{height:"100px"}}>
