@@ -22,7 +22,7 @@ const Details = (props) => {
     setImage(selectedMovie[0].image)
     console.log(selectedMovie)
     console.log(data)
-  }, [props.match])
+  }, [props])
     return (
       <div style={{marginTop: '100px'}}>
         <div className="container">
