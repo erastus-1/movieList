@@ -29,7 +29,7 @@ const Details = (props) => {
         <div className="row">
           <div className="col-md-6" style={{textAlign:"center"}}>
         <h3><strong>{title}</strong></h3>
-        <h5>Cast</h5>
+        <small>Cast by</small>
         <div>
           {cast.forEach(castmember => {
             return <p>{castmember}</p>
