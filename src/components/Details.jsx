@@ -11,7 +11,7 @@ const Details = (props) => {
   useEffect(() => {
     let movieId = props.match.params.movie_id;
     let selectedMovie = data.filter(item => {
-      return item.id == movieId
+      return item.id === movieId
     })
     setTitle(selectedMovie[0].title)
     setCast(selectedMovie[0].cast)
@@ -36,7 +36,7 @@ const Details = (props) => {
           })}
         </div>
         <div >
-          <img style={{width: '200px'}}src={image} />
+          <img style={{width: '200px'}}src={image} alt="props"/>
         </div>
       </div>
     );

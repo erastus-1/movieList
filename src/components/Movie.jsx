@@ -28,7 +28,7 @@ function Movie() {
                 <Card id="Card" style={{height:"400px"}}>
                   <p style={{ textAlign: "center", color:"blue" }}>{item.title}</p>
                   <img
-                    src={item.image}
+                    src={item.image} 
                     style={{ height: "250px", width: "300px" }}
                     alt="props"
                   />
