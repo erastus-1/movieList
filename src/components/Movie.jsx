@@ -26,7 +26,7 @@ function Movie() {
               <Link to={'/' + item.id} key={item.id}>
               <div className="col-md-4" style={{paddingTop:"5px"}} >
                 <Card id="Card" style={{height:"280px", width:"350px"}}>
-                  <h3 style={{ textAlign: "center", color:"blue" }}>{item.title}</h3>
+                  <h3 style={{ textAlign: "center", color:"blue", fontWeight:"bold" }}>{item.title}</h3>
                   <img
                     src={item.image} 
                     style={{ height: "250px", width: "350px" }}
