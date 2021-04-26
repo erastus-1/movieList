@@ -30,7 +30,7 @@ const Details = (props) => {
           <div className="col-md-6" style={{textAlign:"center"}}>
         <h3><strong>{title}</strong></h3>
         <h5>{length} long.</h5>
-        <h5 style={{fontWeight:"bold"}}>Cast by: </h5>
+        <h5 style={{fontWeight:"bold"}}>Casted by: </h5>
         <div>
           {cast.map(castmember => {
             return <p>{castmember}</p>
