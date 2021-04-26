@@ -18,7 +18,7 @@ function Movie() {
       className="container"
       style={{ paddingTop: "100px", paddingBottom: "20px" }}
     >
-    <h1 Style={{color:"blue"}}>My MovieList:</h1>
+    <h1 Style={{color:"blue"}}>My MovieList</h1>
       <div className="row">
         <div className="Movie">
           {movieData &&
